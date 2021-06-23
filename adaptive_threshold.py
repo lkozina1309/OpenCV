@@ -1,4 +1,4 @@
-# Script adaptive_threshold.py shows methods of thresholding. It uses image sudoku.png so You need to downoad it and provide the right path to it.
+# Script adaptive_threshold.py shows methods of thresholding. It uses image sudoku.png so You need to downoad it and provide the correct path to it.
 
 
 import numpy as np
