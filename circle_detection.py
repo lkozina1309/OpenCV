@@ -1,5 +1,5 @@
 # Script circle_detection.py detects circle in an image shapes.jpg. 
-# It's important to download that image and to provide the right path to it. 
+# It's important to download that image and to provide the correct path to it. 
 
 import numpy as np
 import cv2 as cv
