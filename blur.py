@@ -4,7 +4,7 @@ import numpy as np
 import cv2
 from matplotlib import pyplot as plt
 
-img = cv2.imread('/home/marija/opencv/samples/data/mount.jpeg')
+img = cv2.imread('mount.jpeg')
 img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
 img = cv2.resize(img, (512,512))
 
