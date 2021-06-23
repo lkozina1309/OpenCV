@@ -1,4 +1,4 @@
-# Script blur.py shows few methods of blurring an image.
+# Script blur.py shows few methods of blurring an image. It uses image of a footballer Mason Mount so You need to download an image and provide the right path to it.
 
 import numpy as np
 import cv2
