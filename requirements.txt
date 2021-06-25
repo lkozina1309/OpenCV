@@ -1,0 +1,20 @@
+# Script requirements.txt text shows requirements needed to use OpenCV repository and how to install it Ubuntu 20.04.
+
+
+
+DEPENDENCIES INSTALLATION:
+sudo apt-get install python3-pip python3-dev libgtk-3-dev
+sudo apt-get install git
+
+
+OPENCV INSTALLATION:
+
+git clone https://github.com/opencv/opencv.git
+
+mkdir build
+cd build
+
+cmake ../
+
+make
+sudo make install
