@@ -1,7 +1,7 @@
 import cv2
 
-face_cascade = cv2.CascadeClassifier('/home/marija/OpenCV/haar_cascades.xml')
-img = cv2.imread('/home/marija/OpenCV/data/chelsea.jpeg')
+face_cascade = cv2.CascadeClassifier('haar_cascades.xml')
+img = cv2.imread('chelsea.jpeg')
 img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
 faces = face_cascade.detectMultiScale(img, 1.1, 4)
 
