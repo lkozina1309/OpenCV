@@ -4,7 +4,7 @@
 import numpy as np
 import cv2 as cv
 
-img = cv.imread('shapes.png')
+img = cv.imread('shapes.jpg')
 
     
 gray = cv.cvtColor(img, cv.COLOR_BGR2GRAY)
