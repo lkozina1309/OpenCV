@@ -1,5 +1,5 @@
 # Script main_object_tracking.py tracks the object (in this video it will be the car window).
-# It uses script cars.mp4 so You to download it and provide the correct path to it.
+# It uses video cars.mp4 so You to download it and provide the correct path to it.
 
 import numpy as np
 import cv2 as cv
