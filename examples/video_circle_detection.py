@@ -1,8 +1,10 @@
+# Script video_circle.py is used to detect circles on video Megamind.avi, so You need to download it and provide the correct path to it. You can change parameters of a function cv.HoughCircles.
+
 import cv2 as cv
 import numpy as np
 import argparse
 
-cap = cv.VideoCapture('/home/marija/OpenCV/data/Megamind.avi')
+cap = cv.VideoCapture('Megamind.avi')
 
 while cap.isOpened():
 	_, img = cap.read()
