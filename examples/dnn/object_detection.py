@@ -1,4 +1,4 @@
-Script object_detection.py uses internet stream and scripts object_detection_classes_coco.txt, frozen_inference_graph.pb, ssd_mobilenet_v2_coco_2018_03_29.pbtxt for object detection.
+# Script object_detection.py uses internet stream and scripts object_detection_classes_coco.txt, frozen_inference_graph.pb, ssd_mobilenet_v2_coco_2018_03_29.pbtxt for object detection.
 
 import cv2
 import tensorflow
@@ -16,7 +16,7 @@ model.setPreferableBackend(cv2.dnn.DNN_BACKEND_CUDA)
 model.setPreferableTarget(cv2.dnn.DNN_TARGET_CUDA)
 
 cap = cv2.VideoCapture('Your URL/video')
-min_confidence_score = 0.6
+min_confidence_score = 0.5
 
 while cap.isOpened():
 	success, img = cap.read()
