@@ -5,6 +5,7 @@ import tensorflow
 import time
 import numpy as np
 
+useCuda = True
 with open('object_detection_classes_coco.txt', 'r') as f:
 	class_names = f.read().split('\n')
 
@@ -12,8 +13,9 @@ colors = np.random.uniform(0, 255, size=(len(class_names), 3))
 
 model = cv2.dnn.readNetFromTensorflow('frozen_inference_graph.pb','ssd_mobilenet_v2_coco_2018_03_29.pbtxt')
 
-model.setPreferableBackend(cv2.dnn.DNN_BACKEND_CUDA)
-model.setPreferableTarget(cv2.dnn.DNN_TARGET_CUDA)
+if useCuda:
+	model.setPreferableBackend(cv2.dnn.DNN_BACKEND_CUDA)
+	model.setPreferableTarget(cv2.dnn.DNN_TARGET_CUDA)
 
 cap = cv2.VideoCapture('Your URL/video')
 min_confidence_score = 0.5
