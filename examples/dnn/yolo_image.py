@@ -3,14 +3,14 @@ import time
 import cv2
 import os
 
-img = cv2.imread('/home/marija/OpenCV/data/traffic.jpeg')
+img = cv2.imread('traffic.jpeg')
 img = cv2.resize(img, (1500,800))
 useCuda = True
 
-with open('/home/marija/OpenCV/dnn/model/object_detection_classes_coco.txt', 'r') as f:
+with open('object_detection_classes_coco.txt', 'r') as f:
 	classes = f.read().splitlines()
 
-net = cv2.dnn.readNetFromDarknet('/home/marija/OpenCV/dnn/model/yolov4.cfg', '/home/marija/OpenCV/dnn/model/yolov4.weights')
+net = cv2.dnn.readNetFromDarknet('yolov4.cfg', 'yolov4.weights')
 model = cv2.dnn_DetectionModel(net)
 model.setInputParams(scale=1 / 255, size=(416, 416), swapRB=True)
 if useCuda:
