@@ -1,6 +1,6 @@
 import cv2
 
-img = cv2.imread('/home/marija/OpenCV/data/mount.jpeg')
+img = cv2.imread('mount.jpeg')
 img = cv2.resize(img, (1000,1000))
 
 lap = cv2.Laplacian(img, cv2.CV_64F, ksize=3)
