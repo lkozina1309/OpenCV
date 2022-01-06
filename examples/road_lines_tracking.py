@@ -21,7 +21,17 @@ def region(img, vertices):
 	img = cv2.addWeighted(img, 0.8, blank_image, 1, 0.0)
 	return img
 
-image = cv2.imread('road.jpg')
+def drawLines(img, lines):
+	img = np.copy(img)
+	blank_image = np.zeros((img.shape[0], img.shape[1], 3), dtype=np.uint8)
+	for line in lines:
+		for x1,y1,x2,y2 in line:
+			cv2.line(blank_image, (x1,y1), (x2,y2), (0,255,0), thickness=5)
+		
+	img = cv2.addWeighted(img, 0.8, blank_image, 1, 0.0)
+	return img
+
+image = cv2.imread('/home/marija/OpenCV/data/road.jpg')
 
 image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
 
