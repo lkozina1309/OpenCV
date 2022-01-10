@@ -6,7 +6,7 @@
 import numpy as np
 import cv2
 
-img = cv2.imread('/home/marija/opencv/samples/data/mount.jpeg', 1)
+img = cv2.imread('mount.jpeg')
 
 img = cv2.resize(img, (512,512))
 
