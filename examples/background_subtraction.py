@@ -1,7 +1,7 @@
 import numpy as np
 import cv2 as cv
 
-cap = cv.VideoCapture('/home/marija/OpenCV/data/vtest.avi')
+cap = cv.VideoCapture('vtest.avi')
 #bg_sub = cv.bgsegm.createBackgroundSubtractorMOG()
 #bg_sub  = cv.createBackgroundSubtractorMOG2(detectShadows=True)
 bg_sub = cv.createBackgroundSubtractorKNN(detectShadows=True)
