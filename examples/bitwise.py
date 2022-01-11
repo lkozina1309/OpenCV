@@ -3,7 +3,7 @@ import numpy as np
 
 img1 = np.zeros((1000, 1000, 3), np.uint8)
 img1 = cv2.rectangle(img1,(200, 0), (300, 100), (255, 255, 255), -1)
-img2 = cv2.imread("/home/marija/OpenCV/data/water_balloons.jpg")
+img2 = cv2.imread("water_balloons.jpg")
 
 img2 = cv2.resize(img2, (1000,1000))
 
