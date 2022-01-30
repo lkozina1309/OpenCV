@@ -1,4 +1,5 @@
 # Script face_detection.py detects faces in an animated video Megamind.avi and classifier haar_cascades.xml, so You need to download these scripts and provide the correct path. 
+# Faces are detected on video 'Megamind.avi'
 
 import cv2
 
